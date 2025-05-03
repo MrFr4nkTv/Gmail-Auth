@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Autenticación Gmail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Aplicación de Autenticación Gmail</h1>
+    <% if (user) { %>
+        <p>¡Has iniciado sesión correctamente con Gmail!</p>
+        <p>Tus datos de sesión han sido almacenados de forma segura.</p>
+    <% } else { %>
+        <p>Por favor, inicia sesión para continuar.</p>
+        <a href="/auth/login">Iniciar sesión con Gmail</a>
+    <% } %>
+
+    <footer style="margin-top: 50px; color: #666;">
+        <p>&copy; 2025 Aplicación de Autenticación Gmail</p>
+    </footer>
+</body>
+</html>
